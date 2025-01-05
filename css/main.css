@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.first_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.6) 2.82%,
+      rgba(0, 0, 0, 0) 73.1%
+    ),
+    url('/assets/fila.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo_image {
+  width: 340px;
+  height: 70px;
+  margin-left: 10%;
+  margin-top: 3%;
+  src: url('/assets/fila_logo.svg');
+}
+
+.first_picture_line {
+  width: 2px;
+  height: 76px;
+  background-color: #fff;
+}
+
+.text_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  color: #fff;
+}
+
+.first_picture_title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.second_section {
+  /* width: 100%; */
+  height: 120vh;
+  background-size: cover;
+  background-image: url('/assets/fila_2.png');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.symbol {
+  width: 82px;
+  height: 82px;
+  margin-top: 7%;
+}
+
+/* 콘텐츠 스타일 */
+.content {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.letter {
+  max-width: 70%;
+  height: 73vh;
+  padding: 20px 40px;
+  background-color: #fff;
+  border: 4px solid #bd945d;
+  position: absolute;
+  top: 100vh;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.36);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letter_title_emphasis {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 76.27px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #bd945d;
+  flex-shrink: 0;
+}
+
+.letter_title_text {
+  font-size: 22px;
+  text-align: center;
+  flex-shrink: 0;
+  color: #bd945d;
+}
+
+.letter_title_line {
+  width: 100%;
+  height: 1px;
+  background-color: #bd945d;
+  margin-inline: 20px;
+}
+.letter_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.empty_section {
+  height: 50vh;
+  background-color: #fff;
+}
+
+.letter_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter_content_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.letter_content_emphasis {
+  font-size: 24px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.letter_content_emphasis_orange {
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #ea7a4a;
+}
+
+.letter_content_semi_emphasis {
+  font-size: 16px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.letter_content_text {
+  font-size: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  word-break: break-all;
+  white-space: normal;
+  width: 100%;
+}
+
+.third_section {
+  height: 35vh;
+  padding: 100px 77px;
+  background-image: url('/assets/Union.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ea7a4a;
+}
+
+.four_section {
+  background-color: #fff;
+  height: 85vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third_section_picture {
+  max-width: 40%;
+}
+
+@media (max-width: 1600px) {
+  .third_section_picture {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .third_section_picture {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .third_section_picture {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .third_section_picture {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .letter_content_emphasis {
+    font-size: 16px;
+  }
+  .letter_content_emphasis_orange {
+    font-size: 12px;
+  }
+  .letter_content_semi_emphasis {
+    font-size: 12px;
+  }
+  .letter_content_text {
+    font-size: 12px;
+  }
+}
+
+.five_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.25) 2.82%,
+      rgba(0, 0, 0, 0.25) 73.1%
+    ),
+    url('/assets/five_background_picture.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.number {
+  color: #ea7a4a;
+  font-family: Noto Sans;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 84px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.number_text {
+  font-family: Noto Sans;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.number_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.center_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.white_text {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.radius_button {
+  font-family: Noto Sans;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.square_button {
+  text-align: center;
+  cursor: pointer;
+  padding: 40px 24px;
+  width: 40%;
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer_text_bold {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer_text {
+  font-size: 13px;
+}
+
+.footer_copyright {
+  font-size: 13px;
+  color: #afafaf;
+  margin-top: 8px;
+}
