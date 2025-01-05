@@ -40,17 +40,19 @@ p {
 }
 
 .logo_image {
-  width: 340px;
-  height: 70px;
-  margin-left: 10%;
-  margin-top: 3%;
+  width: 20%;
+  min-width: 200px;
+  margin-left: 100px;
+  margin-top: 70px;
   src: url('../assets/fila_logo.svg');
 }
 
 .first_picture_line {
-  width: 2px;
-  height: 76px;
+  width: 1px;
+  height: 60px;
   background-color: #fff;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 .text_group {
@@ -64,9 +66,18 @@ p {
 }
 
 .first_picture_title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.for_your_good_life {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.white_title {
+  font-size: 18px;
 }
 
 .second_section {
@@ -230,9 +241,6 @@ p {
   .third_section_picture {
     max-width: 80%;
   }
-}
-
-@media (max-width: 800px) {
   .letter_content_emphasis {
     font-size: 16px;
   }
@@ -252,7 +260,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
   background: linear-gradient(
       360deg,
       rgba(0, 0, 0, 0.25) 2.82%,
@@ -299,6 +306,111 @@ p {
   align-items: center;
 }
 
+.system {
+  width: 40%;
+  margin-bottom: 120px;
+  min-width: 450px;
+  max-width: 500px;
+}
+
+.worried {
+  width: 35%;
+  min-width: 450px;
+  max-width: 500px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ea7a4a;
+  position: relative;
+  padding-bottom: 500px;
+}
+
+.absolute_movie {
+  position: absolute;
+  bottom: -200px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.six_picture {
+  width: 85%;
+  margin-top: 300px;
+  max-width: 800px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 750px) {
+  .movie {
+    padding-bottom: 300px;
+  }
+  .first_picture_title {
+    font-size: 30px;
+  }
+
+  .for_your_good_life {
+    font-size: 15px;
+  }
+
+  .white_title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button_container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movie {
+    padding-bottom: 280px;
+  }
+  .absolute_movie {
+    bottom: -100px;
+  }
+  .system {
+    min-width: 240px;
+  }
+  .worried {
+    min-width: 200px;
+  }
+  .six_picture {
+    margin-top: 200px;
+  }
+  .first_picture_title {
+    font-size: 24px;
+  }
+
+  .for_your_good_life {
+    font-size: 15px;
+  }
+
+  .white_title {
+    font-size: 13px;
+  }
+
+  .logo_image {
+    margin-left: 30px;
+  }
+}
+
 .white_text {
   color: #fff;
   font-family: Noto Sans;
@@ -319,19 +431,19 @@ p {
 }
 
 .square_button {
-  text-align: center;
-  cursor: pointer;
-  padding: 40px 24px;
-  width: 40%;
-  border: transparent;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  padding: 30px 24px;
+  width: 40%;
+  border: transparent;
   gap: 8px;
 }
 
 .footer_text_bold {
   font-size: 13px;
   font-weight: 700;
+  word-break: keep-all;
 }
 
 .footer_text {
