@@ -87,7 +87,7 @@ p {
 
 .second_section {
   /* width: 100%; */
-  height: 120vh;
+  height: 1260px;
   background-size: cover;
   background-image: url('../assets/fila_2.png');
   background-color: #fff;
@@ -110,14 +110,19 @@ p {
   align-items: center;
 }
 
+.empty_section {
+  height: 650px;
+  background-color: #fff;
+}
+
 .letter {
   max-width: 70%;
-  height: 73vh;
+  height: 900px;
   padding: 20px 40px;
   background-color: #fff;
   border: 4px solid #bd945d;
   position: absolute;
-  top: 100vh;
+  top: 1060px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.36);
   display: flex;
   flex-direction: column;
@@ -155,16 +160,12 @@ p {
   align-items: center;
 }
 
-.empty_section {
-  height: 50vh;
-  background-color: #fff;
-}
-
 .letter_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .letter_content_row {
@@ -229,13 +230,13 @@ p {
     font-size: 14px;
   }
   .letter_content_emphasis_orange {
-    font-size: 10px;
+    font-size: 14px;
   }
   .letter_content_semi_emphasis {
-    font-size: 10px;
+    font-size: 14px;
   }
   .letter_content_text {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
