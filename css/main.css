@@ -123,6 +123,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: overlay;
 }
 
 .letter_title_emphasis {
@@ -203,8 +204,7 @@ p {
 }
 
 .third_section {
-  height: 35vh;
-  padding: 100px 77px;
+  padding: 100px 20px;
   background-image: url('../assets/Union.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -221,42 +221,22 @@ p {
 }
 
 .third_section_picture {
-  max-width: 40%;
-}
-
-@media (max-width: 1600px) {
-  .third_section_picture {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .third_section_picture {
-    max-width: 55%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .third_section_picture {
-    max-width: 60%;
-  }
+  width: 90%;
+  max-width: 600px;
 }
 
 @media (max-width: 1000px) {
-  .third_section_picture {
-    max-width: 80%;
-  }
   .letter_content_emphasis {
     font-size: 16px;
   }
   .letter_content_emphasis_orange {
-    font-size: 12px;
+    font-size: 14px;
   }
   .letter_content_semi_emphasis {
-    font-size: 12px;
+    font-size: 14px;
   }
   .letter_content_text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
